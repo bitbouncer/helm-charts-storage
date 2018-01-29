@@ -1,7 +1,57 @@
 apiVersion: v1
 entries:
+  kafka:
+  - apiVersion: v1
+    created: 2018-01-29T14:06:46.240807474+01:00
+    description: Apache Kafka is publish-subscribe messaging rethought as a distributed
+      commit log.
+    digest: f62af67452149dc3acb77e0087fd5dba54fe182e1af6924dd3ecbf3f3968879a
+    home: https://kafka.apache.org/
+    icon: https://kafka.apache.org/images/logo.png
+    keywords:
+    - kafka
+    - zookeeper
+    - kafka statefulset
+    maintainers:
+    - email: faraaz@rationalizeit.us
+      name: Faraaz Khan
+    - email: marc.villacorta@gmail.com
+      name: Marc Villacorta
+    - email: ben@spothero.com
+      name: Ben Goldberg
+    name: kafka
+    sources:
+    - https://github.com/kubernetes/charts/tree/master/incubator/zookeeper
+    - https://github.com/Yolean/kubernetes-kafka
+    - https://github.com/confluentinc/cp-docker-images
+    - https://github.com/apache/kafka
+    urls:
+    - kafka-0.2.11.tgz
+    version: 0.2.11
+  schema-registry:
+  - apiVersion: v1
+    created: 2018-01-29T14:06:46.241107848+01:00
+    description: Schema Registry provides a serving layer for your metadata. It provides
+      a RESTful interface for storing and retrieving Avro schemas. It stores a versioned
+      history of all schemas, provides multiple compatibility settings and allows
+      evolution of schemas according to the configured compatibility setting. It provides
+      serializers that plug into Kafka clients that handle schema storage and retrieval
+      for Kafka messages that are sent in the Avro format.
+    digest: 20921641f59e286a040e5472944501cdadaed7fe546908f2bc6ad921f19c2c4a
+    home: https://docs.confluent.io/current/schema-registry/docs/index.html
+    icon: https://www.confluent.io/wp-content/themes/confluent/assets/images/confluent-logo-300.png
+    maintainers:
+    - email: ben@spothero.com
+      name: benjigoldberg
+    name: schema-registry
+    sources:
+    - https://github.com/confluentinc/schema-registry
+    - https://github.com/confluentinc/cp-docker-images
+    urls:
+    - schema-registry-0.1.0.tgz
+    version: 0.1.0
   zookeeper:
-  - created: 2018-01-29T10:39:15.424677349+01:00
+  - created: 2018-01-29T14:06:46.241507391+01:00
     description: Centralized service for maintaining configuration information, naming,
       providing distributed synchronization, and providing group services.
     digest: 3500094122497a97fcff733276f2ac02b74d5c2afb788c4698b2de3084f85e39
@@ -19,4 +69,4 @@ entries:
     urls:
     - zookeeper-0.4.3.tgz
     version: 0.4.3
-generated: 2018-01-29T10:39:15.424178574+01:00
+generated: 2018-01-29T14:06:46.239961073+01:00
