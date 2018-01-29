@@ -13,3 +13,12 @@ git push
 helm lint ../helm-charts/zookeeper
 helm package ../helm-charts/zookeeper
 
+helm lint ../helm-charts/kafka
+helm package ../helm-charts/kafka
+
+
+helm repo add bitbouncer 'https://raw.githubusercontent.com/bitbouncer/helm-charts-storage/master/'
+helm repo update
+helm search zookeeper
+
+
