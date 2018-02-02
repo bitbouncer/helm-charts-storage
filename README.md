@@ -27,6 +27,10 @@ helm package ../helm-charts/schema-registry
 helm dep up ../helm-charts/kafka
 helm lint ../helm-charts/kafka
 helm package ../helm-charts/kafka
+
+helm dep up ../helm-charts/kafka_cluster
+helm lint ../helm-charts/kafka_cluster
+helm package ../helm-charts/kafka_cluster
 ```
 
 commit the changes
