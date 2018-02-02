@@ -45,5 +45,15 @@ usage
 helm repo add bitbouncer 'https://raw.githubusercontent.com/bitbouncer/helm-charts-storage/master/'
 helm repo update
 helm search zookeeper
+
+
+helm install --name cluster0 local/kafka_cluster --namespace testing
+helm ls --all --namespace testing
+
+helm del --purge cluster0
+
 ```
+
+
+
 

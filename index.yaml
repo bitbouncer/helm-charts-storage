@@ -2,10 +2,10 @@ apiVersion: v1
 entries:
   kafka:
   - apiVersion: v1
-    created: 2018-01-29T14:07:27.169483957+01:00
+    created: 2018-02-02T15:35:13.683743753+01:00
     description: Apache Kafka is publish-subscribe messaging rethought as a distributed
       commit log.
-    digest: c74d4b7fe75f56e938e8b1af526083d132dcd081b75678e3aab66043ab84d38b
+    digest: 4c92b332d56794daf92b4fb16c32e0a35d60213f766aeee1fa2be8bea3f771c9
     home: https://kafka.apache.org/
     icon: https://kafka.apache.org/images/logo.png
     keywords:
@@ -28,16 +28,41 @@ entries:
     urls:
     - kafka-0.2.11.tgz
     version: 0.2.11
+  kafka_cluster:
+  - apiVersion: v1
+    created: 2018-02-02T15:35:13.685334901+01:00
+    description: Apache Kafka is publish-subscribe messaging rethought as a distributed
+      commit log. Complete with zookeeper and schema registry
+    digest: 3bedf2b3cf27fa74f1daca5758dab9a9008d1d11b7aedca4abeae2cc4ea15567
+    home: https://kafka.apache.org/
+    icon: https://kafka.apache.org/images/logo.png
+    keywords:
+    - kafka
+    - zookeeper
+    - kafka statefulset
+    - schema-registry
+    maintainers:
+    - email: svante.karlsson@csi.se
+      name: svante karlsson
+    name: kafka_cluster
+    sources:
+    - https://github.com/kubernetes/charts/tree/master/incubator/zookeeper
+    - https://github.com/Yolean/kubernetes-kafka
+    - https://github.com/confluentinc/cp-docker-images
+    - https://github.com/apache/kafka
+    urls:
+    - kafka_cluster-0.1.0.tgz
+    version: 0.1.0
   schema-registry:
   - apiVersion: v1
-    created: 2018-01-29T14:07:27.169770898+01:00
+    created: 2018-02-02T15:35:13.685635145+01:00
     description: Schema Registry provides a serving layer for your metadata. It provides
       a RESTful interface for storing and retrieving Avro schemas. It stores a versioned
       history of all schemas, provides multiple compatibility settings and allows
       evolution of schemas according to the configured compatibility setting. It provides
       serializers that plug into Kafka clients that handle schema storage and retrieval
       for Kafka messages that are sent in the Avro format.
-    digest: 20921641f59e286a040e5472944501cdadaed7fe546908f2bc6ad921f19c2c4a
+    digest: 39458f737b4060d47c83763eb02ec055790aa7642e700028df3e58e4fbd5f17e
     home: https://docs.confluent.io/current/schema-registry/docs/index.html
     icon: https://www.confluent.io/wp-content/themes/confluent/assets/images/confluent-logo-300.png
     maintainers:
@@ -51,7 +76,7 @@ entries:
     - schema-registry-0.1.0.tgz
     version: 0.1.0
   zookeeper:
-  - created: 2018-01-29T14:07:27.17015117+01:00
+  - created: 2018-02-02T15:35:13.685994983+01:00
     description: Centralized service for maintaining configuration information, naming,
       providing distributed synchronization, and providing group services.
     digest: 3500094122497a97fcff733276f2ac02b74d5c2afb788c4698b2de3084f85e39
@@ -69,4 +94,4 @@ entries:
     urls:
     - zookeeper-0.4.3.tgz
     version: 0.4.3
-generated: 2018-01-29T14:07:27.168468775+01:00
+generated: 2018-02-02T15:35:13.682764565+01:00
