@@ -2,10 +2,10 @@ apiVersion: v1
 entries:
   kafka:
   - apiVersion: v1
-    created: 2018-02-05T12:41:17.263982215+01:00
+    created: 2018-02-05T14:47:10.660867232+01:00
     description: Apache Kafka is publish-subscribe messaging rethought as a distributed
       commit log.
-    digest: eaa9aa401c639e49f44e83dbe5d748add6ddbfacfe0523e8c0fb2f86902774fb
+    digest: 1e4abcfc767e74b258e0c052343454dc1294bb6943713d36a9fd9c4ae20ed2bb
     home: https://kafka.apache.org/
     icon: https://kafka.apache.org/images/logo.png
     keywords:
@@ -28,9 +28,26 @@ entries:
     urls:
     - kafka-0.2.11.tgz
     version: 0.2.11
+  kafka-op5:
+  - apiVersion: v1
+    created: 2018-02-05T14:47:10.661184167+01:00
+    description: Legacy Apache Kafka 0.9x
+    digest: 09119a9761d0dba23ebda598eb9876273b1ab4eeb78b2f5cbd999a8a7290fbb2
+    home: https://kafka.apache.org/
+    icon: https://kafka.apache.org/images/logo.png
+    keywords:
+    - kafka
+    - zookeeper
+    - kafka statefulset
+    name: kafka-op5
+    sources:
+    - https://github.com/apache/kafka
+    urls:
+    - kafka-op5-0.0.9.tgz
+    version: 0.0.9
   kafka_cluster:
   - apiVersion: v1
-    created: 2018-02-05T12:41:17.264972198+01:00
+    created: 2018-02-05T14:47:10.662236317+01:00
     description: Apache Kafka is publish-subscribe messaging rethought as a distributed
       commit log. Complete with zookeeper and schema registry
     digest: 78001497410e79102ba1ced06226ce480ee800a573df6a80838cd6b89cfb95c5
@@ -55,7 +72,7 @@ entries:
     version: 0.1.0
   schema-registry:
   - apiVersion: v1
-    created: 2018-02-05T12:41:17.265238052+01:00
+    created: 2018-02-05T14:47:10.662506937+01:00
     description: Schema Registry provides a serving layer for your metadata. It provides
       a RESTful interface for storing and retrieving Avro schemas. It stores a versioned
       history of all schemas, provides multiple compatibility settings and allows
@@ -76,7 +93,7 @@ entries:
     - schema-registry-0.1.0.tgz
     version: 0.1.0
   zookeeper:
-  - created: 2018-02-05T12:41:17.265622717+01:00
+  - created: 2018-02-05T14:47:10.662886244+01:00
     description: Centralized service for maintaining configuration information, naming,
       providing distributed synchronization, and providing group services.
     digest: 3500094122497a97fcff733276f2ac02b74d5c2afb788c4698b2de3084f85e39
@@ -94,4 +111,4 @@ entries:
     urls:
     - zookeeper-0.4.3.tgz
     version: 0.4.3
-generated: 2018-02-05T12:41:17.263498609+01:00
+generated: 2018-02-05T14:47:10.660392926+01:00

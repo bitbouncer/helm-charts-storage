@@ -51,6 +51,9 @@ helm search zookeeper
 
 helm repo update
 helm install --name cluster0 bitbouncer/kafka_cluster --namespace testing
+helm install --name cluster0 bitbouncer/kafka_cluster --namespace testing --set kafka.image=op5com/kafka --set kafka.imageTag=latest
+
+
 helm ls --all --namespace testing
 
 helm del --purge cluster0
