@@ -43,9 +43,11 @@ git push
 
 usage
 ```
+helm repo remove bitbouncer 
+rm ~/.helm/repository/cache/bitbouncer-index.yaml
 helm repo add bitbouncer 'https://raw.githubusercontent.com/bitbouncer/helm-charts-storage/master/'
 helm repo update
-helm search zookeeper
+helm search  bitbouncer
 
 helm repo update
 helm install --name cluster0 bitbouncer/kafka_cluster --namespace testing

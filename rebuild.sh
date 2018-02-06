@@ -26,17 +26,15 @@ git push
 
 helm repo update
 
+rm ../helm-charts/kafka_cluster/charts/*
 helm dep up ../helm-charts/kafka_cluster
 helm lint ../helm-charts/kafka_cluster
 helm package ../helm-charts/kafka_cluster
 
+rm ../helm-charts/kafka_cluster_op6/charts/*
 helm dep up ../helm-charts/kafka_cluster_op6
 helm lint ../helm-charts/kafka_cluster_op6
 helm package ../helm-charts/kafka_cluster_op6
-
-#helm dep up ../helm-charts/kafka_cluster_op5_2
-#helm lint ../helm-charts/kafka_cluster_op5_2
-#helm package ../helm-charts/kafka_cluster_op5_2
 
 helm repo index . 
 git commit --all -m 'New chart version'
