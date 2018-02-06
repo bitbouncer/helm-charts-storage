@@ -1,25 +1,43 @@
 apiVersion: v1
 entries:
-  kafka-op5-2-subchart:
+  kafka:
   - apiVersion: v1
-    created: 2018-02-06T13:36:53.192882338+01:00
+    created: 2018-02-06T13:46:13.219131241+01:00
+    description: Apache Kafka is publish-subscribe messaging rethought as a distributed
+      commit log.
+    digest: e951b51c9de4256f073120d618eaa8ef44a08c4dff09aca21037766d2886a9e3
+    home: https://kafka.apache.org/
+    icon: https://kafka.apache.org/images/logo.png
+    keywords:
+    - kafka
+    - kafka statefulset
+    name: kafka
+    sources:
+    - https://github.com/confluentinc/cp-docker-images
+    - https://github.com/apache/kafka
+    urls:
+    - kafka-0.2.11.tgz
+    version: 0.2.11
+  kafka-op5:
+  - apiVersion: v1
+    created: 2018-02-06T13:46:13.219451759+01:00
     description: Legacy Apache Kafka 0.9x
-    digest: b4db0e0d6df3864465cbfdc9eaf72266826d9798cb00d3b5e8c1609b0f12459a
+    digest: 3103c41fe472d1bde2ecb763b36006148ab07b3ef0d0b0c49b6c23d2f7953e1b
     home: https://kafka.apache.org/
     icon: https://kafka.apache.org/images/logo.png
     keywords:
     - kafka
     - zookeeper
     - kafka statefulset
-    name: kafka-op5-2-subchart
+    name: kafka-op5
     sources:
     - https://github.com/apache/kafka
     urls:
-    - kafka-op5-2-subchart-0.0.9.tgz
+    - kafka-op5-0.0.9.tgz
     version: 0.0.9
   kafka-op5-3:
   - apiVersion: v1
-    created: 2018-02-06T13:36:53.19305569+01:00
+    created: 2018-02-06T13:46:13.219620087+01:00
     description: Legacy Apache Kafka 0.9x
     digest: 2785bed89ae5a1de00948f6bd4762d80274d95f1c8e5ab7aefc40204759e9498
     home: https://kafka.apache.org/
@@ -34,44 +52,9 @@ entries:
     urls:
     - kafka-op5-3-0.0.1.tgz
     version: 0.0.1
-  kafka-op5-subchart:
-  - apiVersion: v1
-    created: 2018-02-06T13:36:53.193376432+01:00
-    description: Legacy Apache Kafka 0.9x
-    digest: b7a3d695883ff733ce5a9152acd446495bcc4edf6ae0e164b8ec3479e531c40e
-    home: https://kafka.apache.org/
-    icon: https://kafka.apache.org/images/logo.png
-    keywords:
-    - kafka
-    - zookeeper
-    - kafka statefulset
-    name: kafka-op5-subchart
-    sources:
-    - https://github.com/apache/kafka
-    urls:
-    - kafka-op5-subchart-0.0.9.tgz
-    version: 0.0.9
-  kafka-subchart:
-  - apiVersion: v1
-    created: 2018-02-06T13:36:53.193700891+01:00
-    description: Apache Kafka is publish-subscribe messaging rethought as a distributed
-      commit log.
-    digest: a3c7f0f1bdac31e59784b58d9dafa2e4e9f72791cded24db9ebb9cda615fde88
-    home: https://kafka.apache.org/
-    icon: https://kafka.apache.org/images/logo.png
-    keywords:
-    - kafka
-    - kafka statefulset
-    name: kafka-subchart
-    sources:
-    - https://github.com/confluentinc/cp-docker-images
-    - https://github.com/apache/kafka
-    urls:
-    - kafka-subchart-0.2.11.tgz
-    version: 0.2.11
   kafka_cluster:
   - apiVersion: v1
-    created: 2018-02-06T13:36:53.19470592+01:00
+    created: 2018-02-06T13:46:13.220625817+01:00
     description: Apache Kafka is publish-subscribe messaging rethought as a distributed
       commit log. Complete with zookeeper and schema registry
     digest: 061d7bf525503a742df44e9f133cf23515b2cc7452b0f40d11783b71be176dc5
@@ -96,7 +79,7 @@ entries:
     version: 0.1.0
   kafka_cluster_op5:
   - apiVersion: v1
-    created: 2018-02-06T13:36:53.195344148+01:00
+    created: 2018-02-06T13:46:13.221250402+01:00
     description: Apache Kafka is publish-subscribe messaging rethought as a distributed
       commit log. Complete with zookeeper and schema registry
     digest: 10843537651483a0aac4e5e62f529ac3dafae928126ed388c46b4f8c6fba182a
@@ -121,7 +104,7 @@ entries:
     version: 0.1.0
   kafka_cluster_op5_2:
   - apiVersion: v1
-    created: 2018-02-06T13:36:53.196228311+01:00
+    created: 2018-02-06T13:46:13.222124291+01:00
     description: Apache Kafka is publish-subscribe messaging rethought as a distributed
       commit log. Complete with zookeeper and schema registry
     digest: 1665eb6fda11b3e54061a139e8d799efb3a8dda380fb2d7c9afb565bd626268d
@@ -144,43 +127,21 @@ entries:
     urls:
     - kafka_cluster_op5_2-0.1.0.tgz
     version: 0.1.0
-  schema-registry-subchart:
-  - apiVersion: v1
-    created: 2018-02-06T13:36:53.19651222+01:00
-    description: Schema Registry provides a serving layer for your metadata. It provides
-      a RESTful interface for storing and retrieving Avro schemas. It stores a versioned
-      history of all schemas, provides multiple compatibility settings and allows
-      evolution of schemas according to the configured compatibility setting. It provides
-      serializers that plug into Kafka clients that handle schema storage and retrieval
-      for Kafka messages that are sent in the Avro format.
-    digest: b2171c16ddcfc9d56a2e898ea1e1574a5d7f91994c1b47ff63501740834fc7d6
-    home: https://docs.confluent.io/current/schema-registry/docs/index.html
-    icon: https://www.confluent.io/wp-content/themes/confluent/assets/images/confluent-logo-300.png
-    maintainers:
-    - email: svante.karlsson@csi.se
-      name: svante karlsson
-    name: schema-registry-subchart
-    sources:
-    - https://github.com/confluentinc/schema-registry
-    - https://github.com/confluentinc/cp-docker-images
-    urls:
-    - schema-registry-subchart-0.1.0.tgz
-    version: 0.1.0
-  zookeeper-subchart:
-  - created: 2018-02-06T13:36:53.196895866+01:00
+  zookeeper:
+  - created: 2018-02-06T13:46:13.222487046+01:00
     description: Centralized service for maintaining configuration information, naming,
       providing distributed synchronization, and providing group services.
-    digest: f7f6d76393c298cb5f0119958d3f43d77a3e83bf812f55dd21658324b8f5125b
+    digest: 7822e70af153f4e8b9c2dfeb4ba63404be42876e1b4b3cf862f0695933e42dd1
     home: https://zookeeper.apache.org/
     icon: https://zookeeper.apache.org/images/zookeeper_small.gif
     maintainers:
     - email: svante.karlsson@csi.se
       name: svante karlsson
-    name: zookeeper-subchart
+    name: zookeeper
     sources:
     - https://github.com/apache/zookeeper
     - https://github.com/kubernetes/contrib/tree/master/statefulset/zookeeper
     urls:
-    - zookeeper-subchart-0.4.3.tgz
+    - zookeeper-0.4.3.tgz
     version: 0.4.3
-generated: 2018-02-06T13:36:53.192549263+01:00
+generated: 2018-02-06T13:46:13.218679832+01:00

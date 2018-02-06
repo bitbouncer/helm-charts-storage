@@ -2,14 +2,14 @@
 
 set -ef
 
-helm lint ../helm-charts/zookeeper-subchart
-helm package ../helm-charts/zookeeper-subchart
+helm lint ../helm-charts/zookeeper
+helm package ../helm-charts/zookeeper
 
-helm lint ../helm-charts/kafka-subchart
-helm package ../helm-charts/kafka-subchart
+helm lint ../helm-charts/kafka
+helm package ../helm-charts/kafka
 
-helm lint ../helm-charts/kafka-op5-subchart
-helm package ../helm-charts/kafka-op5-subchart
+helm lint ../helm-charts/kafka-op5
+helm package ../helm-charts/kafka-op5
 
 helm lint ../helm-charts/kafka-op5-3
 helm package ../helm-charts/kafka-op5-3
@@ -41,5 +41,8 @@ helm package ../helm-charts/kafka_cluster_op5
 helm repo index . 
 git commit --all -m 'New chart version'
 git push
+
+helm repo update
+
 
 
