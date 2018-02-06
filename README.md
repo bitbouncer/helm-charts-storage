@@ -28,8 +28,6 @@ helm dep up ../helm-charts/schema-registry
 helm lint ../helm-charts/schema-registry
 helm package ../helm-charts/schema-registry
 
-
-
 helm dep up ../helm-charts/kafka_cluster
 helm lint ../helm-charts/kafka_cluster
 helm package ../helm-charts/kafka_cluster
@@ -51,7 +49,7 @@ helm search zookeeper
 
 helm repo update
 helm install --name cluster0 bitbouncer/kafka_cluster --namespace testing
-helm install --name cluster0 bitbouncer/kafka_cluster --namespace testing --set kafka.image=op5com/kafka --set kafka.imageTag=latest
+helm install --name cluster0 bitbouncer/kafka_cluster_op5 --namespace testing
 
 
 helm ls --all --namespace testing
