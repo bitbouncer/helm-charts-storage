@@ -21,6 +21,7 @@ helm lint ../helm-charts/schema-registry
 helm package ../helm-charts/schema-registry
 
 helm repo index . 
+git add *.tgz
 git commit --all -m 'New chart version'
 git push
 
@@ -37,6 +38,7 @@ helm lint ../helm-charts/kafka_cluster_op6
 helm package ../helm-charts/kafka_cluster_op6
 
 helm repo index . 
+git add *.tgz
 git commit --all -m 'New chart version'
 git push
 
