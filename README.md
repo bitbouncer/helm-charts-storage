@@ -51,7 +51,7 @@ helm search  bitbouncer
 
 helm repo update
 helm install --name cluster0 bitbouncer/kafka_cluster --namespace testing
-helm install --name cluster0 bitbouncer/kafka_cluster_op5 --namespace testing
+helm install --name cluster0 bitbouncer/kafka_cluster_op6 --namespace testing
 
 
 helm ls --all --namespace testing
