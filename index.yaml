@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   kafka:
   - apiVersion: v1
-    created: 2018-02-06T13:59:13.095753437+01:00
+    created: 2018-02-06T14:00:52.089237069+01:00
     description: Apache Kafka is publish-subscribe messaging rethought as a distributed
       commit log.
     digest: e951b51c9de4256f073120d618eaa8ef44a08c4dff09aca21037766d2886a9e3
@@ -20,7 +20,7 @@ entries:
     version: 0.2.11
   kafka-op5:
   - apiVersion: v1
-    created: 2018-02-06T13:59:13.096072387+01:00
+    created: 2018-02-06T14:00:52.089576264+01:00
     description: Legacy Apache Kafka 0.9x
     digest: 3103c41fe472d1bde2ecb763b36006148ab07b3ef0d0b0c49b6c23d2f7953e1b
     home: https://kafka.apache.org/
@@ -37,7 +37,7 @@ entries:
     version: 0.0.9
   kafka-op5-3:
   - apiVersion: v1
-    created: 2018-02-06T13:59:13.096236161+01:00
+    created: 2018-02-06T14:00:52.08977642+01:00
     description: Legacy Apache Kafka 0.9x
     digest: 2785bed89ae5a1de00948f6bd4762d80274d95f1c8e5ab7aefc40204759e9498
     home: https://kafka.apache.org/
@@ -52,108 +52,9 @@ entries:
     urls:
     - kafka-op5-3-0.0.1.tgz
     version: 0.0.1
-  kafka_cluster:
-  - apiVersion: v1
-    created: 2018-02-06T13:59:13.097192683+01:00
-    description: Apache Kafka is publish-subscribe messaging rethought as a distributed
-      commit log. Complete with zookeeper and schema registry
-    digest: 04bab92cfe850460d54bd53360035108d84b85546ba96039d66e7bdd7a55242e
-    home: https://kafka.apache.org/
-    icon: https://kafka.apache.org/images/logo.png
-    keywords:
-    - kafka
-    - zookeeper
-    - kafka statefulset
-    - schema-registry
-    maintainers:
-    - email: svante.karlsson@csi.se
-      name: svante karlsson
-    name: kafka_cluster
-    sources:
-    - https://github.com/kubernetes/charts/tree/master/incubator/zookeeper
-    - https://github.com/Yolean/kubernetes-kafka
-    - https://github.com/confluentinc/cp-docker-images
-    - https://github.com/apache/kafka
-    urls:
-    - kafka_cluster-0.1.0.tgz
-    version: 0.1.0
-  kafka_cluster_op5:
-  - apiVersion: v1
-    created: 2018-02-06T13:59:13.098872926+01:00
-    description: Apache Kafka is publish-subscribe messaging rethought as a distributed
-      commit log. Complete with zookeeper and schema registry
-    digest: 3261fbc4cebfbeab4459593755fc476d1f75932e294f0f0477aba0364bc9f24d
-    home: https://kafka.apache.org/
-    icon: https://kafka.apache.org/images/logo.png
-    keywords:
-    - kafka
-    - zookeeper
-    - kafka statefulset
-    - schema-registry
-    maintainers:
-    - email: svante.karlsson@csi.se
-      name: svante karlsson
-    name: kafka_cluster_op5
-    sources:
-    - https://github.com/kubernetes/charts/tree/master/incubator/zookeeper
-    - https://github.com/Yolean/kubernetes-kafka
-    - https://github.com/confluentinc/cp-docker-images
-    - https://github.com/apache/kafka
-    urls:
-    - kafka_cluster_op5-0.1.0.tgz
-    version: 0.1.0
-  - apiVersion: v1
-    created: 2018-02-06T13:59:13.09812292+01:00
-    description: Apache Kafka is publish-subscribe messaging rethought as a distributed
-      commit log. Complete with zookeeper and schema registry
-    digest: 777573ec9126fdb0ee4e0dae66340cac54700cbaf163f7b60613233b59a71480
-    home: https://kafka.apache.org/
-    icon: https://kafka.apache.org/images/logo.png
-    keywords:
-    - kafka
-    - zookeeper
-    - kafka statefulset
-    - schema-registry
-    maintainers:
-    - email: svante.karlsson@csi.se
-      name: svante karlsson
-    name: kafka_cluster_op5
-    sources:
-    - https://github.com/kubernetes/charts/tree/master/incubator/zookeeper
-    - https://github.com/Yolean/kubernetes-kafka
-    - https://github.com/confluentinc/cp-docker-images
-    - https://github.com/apache/kafka
-    urls:
-    - kafka_cluster_op5-0.0.1.tgz
-    version: 0.0.1
-  kafka_cluster_op5_2:
-  - apiVersion: v1
-    created: 2018-02-06T13:59:13.099713869+01:00
-    description: Apache Kafka is publish-subscribe messaging rethought as a distributed
-      commit log. Complete with zookeeper and schema registry
-    digest: 1665eb6fda11b3e54061a139e8d799efb3a8dda380fb2d7c9afb565bd626268d
-    home: https://kafka.apache.org/
-    icon: https://kafka.apache.org/images/logo.png
-    keywords:
-    - kafka
-    - zookeeper
-    - kafka statefulset
-    - schema-registry
-    maintainers:
-    - email: svante.karlsson@csi.se
-      name: svante karlsson
-    name: kafka_cluster_op5_2
-    sources:
-    - https://github.com/kubernetes/charts/tree/master/incubator/zookeeper
-    - https://github.com/Yolean/kubernetes-kafka
-    - https://github.com/confluentinc/cp-docker-images
-    - https://github.com/apache/kafka
-    urls:
-    - kafka_cluster_op5_2-0.1.0.tgz
-    version: 0.1.0
   schema-registry:
   - apiVersion: v1
-    created: 2018-02-06T13:59:13.100070825+01:00
+    created: 2018-02-06T14:00:52.090069521+01:00
     description: Schema Registry provides a serving layer for your metadata. It provides
       a RESTful interface for storing and retrieving Avro schemas. It stores a versioned
       history of all schemas, provides multiple compatibility settings and allows
@@ -174,7 +75,7 @@ entries:
     - schema-registry-0.1.0.tgz
     version: 0.1.0
   zookeeper:
-  - created: 2018-02-06T13:59:13.101261462+01:00
+  - created: 2018-02-06T14:00:52.090454641+01:00
     description: Centralized service for maintaining configuration information, naming,
       providing distributed synchronization, and providing group services.
     digest: 7822e70af153f4e8b9c2dfeb4ba63404be42876e1b4b3cf862f0695933e42dd1
@@ -190,4 +91,4 @@ entries:
     urls:
     - zookeeper-0.4.3.tgz
     version: 0.4.3
-generated: 2018-02-06T13:59:13.095333323+01:00
+generated: 2018-02-06T14:00:52.088801921+01:00
