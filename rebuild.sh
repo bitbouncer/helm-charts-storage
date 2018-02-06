@@ -17,8 +17,8 @@ helm package ../helm-charts/kafka-op5-3
 #helm lint ../helm-charts/kafka-op5-2-subchart
 #helm package ../helm-charts/kafka-op5-2-subchart
 
-#helm lint ../helm-charts/schema-registry-subchart
-#helm package ../helm-charts/schema-registry-subchart
+helm lint ../helm-charts/schema-registry
+helm package ../helm-charts/schema-registry
 
 helm repo index . 
 git commit --all -m 'New chart version'
