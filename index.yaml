@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   kafka:
   - apiVersion: v1
-    created: 2018-02-06T10:44:49.999549274+01:00
+    created: 2018-02-06T10:44:57.199162765+01:00
     description: Apache Kafka is publish-subscribe messaging rethought as a distributed
       commit log.
     digest: 1e4abcfc767e74b258e0c052343454dc1294bb6943713d36a9fd9c4ae20ed2bb
@@ -30,7 +30,7 @@ entries:
     version: 0.2.11
   kafka-op5:
   - apiVersion: v1
-    created: 2018-02-06T10:44:49.999877993+01:00
+    created: 2018-02-06T10:44:57.199467075+01:00
     description: Legacy Apache Kafka 0.9x
     digest: 3103c41fe472d1bde2ecb763b36006148ab07b3ef0d0b0c49b6c23d2f7953e1b
     home: https://kafka.apache.org/
@@ -47,7 +47,7 @@ entries:
     version: 0.0.9
   kafka-op5-2:
   - apiVersion: v1
-    created: 2018-02-06T10:44:50.000121535+01:00
+    created: 2018-02-06T10:44:57.19969343+01:00
     description: Legacy Apache Kafka 0.9x
     digest: cf4fc6019f716ce9ddf0b57bd86a60d80264e718005c09c443ede3601a1372be
     home: https://kafka.apache.org/
@@ -64,7 +64,7 @@ entries:
     version: 0.0.9
   kafka_cluster:
   - apiVersion: v1
-    created: 2018-02-06T10:44:50.001189361+01:00
+    created: 2018-02-06T10:44:57.20066202+01:00
     description: Apache Kafka is publish-subscribe messaging rethought as a distributed
       commit log. Complete with zookeeper and schema registry
     digest: 045ae2e911e4e3e85dfc99d2c20f501c00f03bf86ce4776ab10f099f4a71a0c1
@@ -89,10 +89,10 @@ entries:
     version: 0.1.0
   kafka_cluster_op5:
   - apiVersion: v1
-    created: 2018-02-06T10:44:50.002186774+01:00
+    created: 2018-02-06T10:44:57.201618133+01:00
     description: Apache Kafka is publish-subscribe messaging rethought as a distributed
       commit log. Complete with zookeeper and schema registry
-    digest: e381e8a9e34cdd3049545e1ff439fecfbdc223f3aa4cf0417d3d17ff2aafe0c7
+    digest: 3eb2be6cb74838978dcffcc91dc2f576d65c64c7ab83a6de5549a42371df687d
     home: https://kafka.apache.org/
     icon: https://kafka.apache.org/images/logo.png
     keywords:
@@ -112,9 +112,34 @@ entries:
     urls:
     - kafka_cluster_op5-0.1.0.tgz
     version: 0.1.0
+  kafka_cluster_op5_2:
+  - apiVersion: v1
+    created: 2018-02-06T10:44:57.202441384+01:00
+    description: Apache Kafka is publish-subscribe messaging rethought as a distributed
+      commit log. Complete with zookeeper and schema registry
+    digest: 1665eb6fda11b3e54061a139e8d799efb3a8dda380fb2d7c9afb565bd626268d
+    home: https://kafka.apache.org/
+    icon: https://kafka.apache.org/images/logo.png
+    keywords:
+    - kafka
+    - zookeeper
+    - kafka statefulset
+    - schema-registry
+    maintainers:
+    - email: svante.karlsson@csi.se
+      name: svante karlsson
+    name: kafka_cluster_op5_2
+    sources:
+    - https://github.com/kubernetes/charts/tree/master/incubator/zookeeper
+    - https://github.com/Yolean/kubernetes-kafka
+    - https://github.com/confluentinc/cp-docker-images
+    - https://github.com/apache/kafka
+    urls:
+    - kafka_cluster_op5_2-0.1.0.tgz
+    version: 0.1.0
   schema-registry:
   - apiVersion: v1
-    created: 2018-02-06T10:44:50.002617731+01:00
+    created: 2018-02-06T10:44:57.20271178+01:00
     description: Schema Registry provides a serving layer for your metadata. It provides
       a RESTful interface for storing and retrieving Avro schemas. It stores a versioned
       history of all schemas, provides multiple compatibility settings and allows
@@ -135,7 +160,7 @@ entries:
     - schema-registry-0.1.0.tgz
     version: 0.1.0
   zookeeper:
-  - created: 2018-02-06T10:44:50.003095651+01:00
+  - created: 2018-02-06T10:44:57.20306419+01:00
     description: Centralized service for maintaining configuration information, naming,
       providing distributed synchronization, and providing group services.
     digest: 3500094122497a97fcff733276f2ac02b74d5c2afb788c4698b2de3084f85e39
@@ -153,4 +178,4 @@ entries:
     urls:
     - zookeeper-0.4.3.tgz
     version: 0.4.3
-generated: 2018-02-06T10:44:49.999072443+01:00
+generated: 2018-02-06T10:44:57.198707767+01:00
