@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   kafka-op5-2-subchart:
   - apiVersion: v1
-    created: 2018-02-06T11:07:05.03422064+01:00
+    created: 2018-02-06T13:26:37.823633153+01:00
     description: Legacy Apache Kafka 0.9x
     digest: b4db0e0d6df3864465cbfdc9eaf72266826d9798cb00d3b5e8c1609b0f12459a
     home: https://kafka.apache.org/
@@ -17,9 +17,26 @@ entries:
     urls:
     - kafka-op5-2-subchart-0.0.9.tgz
     version: 0.0.9
+  kafka-op5-3:
+  - apiVersion: v1
+    created: 2018-02-06T13:26:37.823801861+01:00
+    description: Legacy Apache Kafka 0.9x
+    digest: 2785bed89ae5a1de00948f6bd4762d80274d95f1c8e5ab7aefc40204759e9498
+    home: https://kafka.apache.org/
+    icon: https://kafka.apache.org/images/logo.png
+    keywords:
+    - kafka
+    - zookeeper
+    - kafka statefulset
+    name: kafka-op5-3
+    sources:
+    - https://github.com/apache/kafka
+    urls:
+    - kafka-op5-3-0.0.1.tgz
+    version: 0.0.1
   kafka-op5-subchart:
   - apiVersion: v1
-    created: 2018-02-06T11:07:05.034545238+01:00
+    created: 2018-02-06T13:26:37.824113581+01:00
     description: Legacy Apache Kafka 0.9x
     digest: b7a3d695883ff733ce5a9152acd446495bcc4edf6ae0e164b8ec3479e531c40e
     home: https://kafka.apache.org/
@@ -36,7 +53,7 @@ entries:
     version: 0.0.9
   kafka-subchart:
   - apiVersion: v1
-    created: 2018-02-06T11:07:05.03487499+01:00
+    created: 2018-02-06T13:26:37.82442702+01:00
     description: Apache Kafka is publish-subscribe messaging rethought as a distributed
       commit log.
     digest: a3c7f0f1bdac31e59784b58d9dafa2e4e9f72791cded24db9ebb9cda615fde88
@@ -54,7 +71,7 @@ entries:
     version: 0.2.11
   kafka_cluster:
   - apiVersion: v1
-    created: 2018-02-06T11:07:05.035843585+01:00
+    created: 2018-02-06T13:26:37.825418062+01:00
     description: Apache Kafka is publish-subscribe messaging rethought as a distributed
       commit log. Complete with zookeeper and schema registry
     digest: 3af54e30a385a81ede669452c9d47ae8a695fa9f348e95f7b027754029563e15
@@ -79,7 +96,7 @@ entries:
     version: 0.1.0
   kafka_cluster_op5:
   - apiVersion: v1
-    created: 2018-02-06T11:07:05.036832161+01:00
+    created: 2018-02-06T13:26:37.826367745+01:00
     description: Apache Kafka is publish-subscribe messaging rethought as a distributed
       commit log. Complete with zookeeper and schema registry
     digest: 3eb2be6cb74838978dcffcc91dc2f576d65c64c7ab83a6de5549a42371df687d
@@ -104,7 +121,7 @@ entries:
     version: 0.1.0
   kafka_cluster_op5_2:
   - apiVersion: v1
-    created: 2018-02-06T11:07:05.037679097+01:00
+    created: 2018-02-06T13:26:37.827208452+01:00
     description: Apache Kafka is publish-subscribe messaging rethought as a distributed
       commit log. Complete with zookeeper and schema registry
     digest: 1665eb6fda11b3e54061a139e8d799efb3a8dda380fb2d7c9afb565bd626268d
@@ -129,7 +146,7 @@ entries:
     version: 0.1.0
   schema-registry-subchart:
   - apiVersion: v1
-    created: 2018-02-06T11:07:05.037944714+01:00
+    created: 2018-02-06T13:26:37.827480719+01:00
     description: Schema Registry provides a serving layer for your metadata. It provides
       a RESTful interface for storing and retrieving Avro schemas. It stores a versioned
       history of all schemas, provides multiple compatibility settings and allows
@@ -150,7 +167,7 @@ entries:
     - schema-registry-subchart-0.1.0.tgz
     version: 0.1.0
   zookeeper-subchart:
-  - created: 2018-02-06T11:07:05.038302439+01:00
+  - created: 2018-02-06T13:26:37.827840634+01:00
     description: Centralized service for maintaining configuration information, naming,
       providing distributed synchronization, and providing group services.
     digest: f7f6d76393c298cb5f0119958d3f43d77a3e83bf812f55dd21658324b8f5125b
@@ -166,4 +183,4 @@ entries:
     urls:
     - zookeeper-subchart-0.4.3.tgz
     version: 0.4.3
-generated: 2018-02-06T11:07:05.033892245+01:00
+generated: 2018-02-06T13:26:37.823297761+01:00
